@@ -151,3 +151,12 @@ sol: db.comments.find({username:"ScumbagSteve"}).pretty()
 
 8)  find all comments belonging to the post "Reports a bug in your code"
 sol: db.comments.find({post : ObjectId("5d5a9198030cebf13f9d564f")}).pretty()
+
+---------------------------------------------------------------------------------------------------------------------
+
+--->How to export Collection?
+ mongoexport --db <db_name> --collection <collection_name> --out <c:\data_export\movies.json>
+ 
+ ---->How to import Collection?
+   mongoimport --db <db_name> --collection <collection_name> --file <c:\data_export\movies.json>
+-----------------------------------------------------------------------------------------------------------------------
